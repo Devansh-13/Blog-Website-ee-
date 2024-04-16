@@ -44,7 +44,7 @@ body{
 }
 
 a{
-    color: var(--color-gray-700);
+    color: #1b6295;
     text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ ul{
 }
 
 h1,h2,h3,h4,h5,h6{
-    color:var(--color-gray-900);
+    color:#1b6295;
     line-height:1.1;
 }
 
@@ -98,7 +98,7 @@ img{
 }
 
 .btn.primary{
-    background: var(--color-primary);
+    background: #d70954;
     color:var(--color-white);
 }
 
@@ -171,7 +171,7 @@ nav{
 }
 
 .nav__logo{
-    width:3rem;
+    width:4rem;
     display: block;
 }
 
@@ -207,9 +207,14 @@ section{
 
 /* ------ ----------footer-----------------*/
 footer{
-    background: var(--color-gray-900);
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background: #15b6bc;
     margin-top: 6rem;
-    padding-top: 6rem;
+    padding-top: 40px;
+    padding-bottom: 30px;
 
 }
 
@@ -222,7 +227,7 @@ footer{
 }
 
 .footer__categories a{
-    background: var(--color-gray-700);
+    background: #d70954 ;
     color: var(--color-white);
     padding: 0.6rem 1.4rem;
     border-radius: var(--radius-2);
@@ -235,13 +240,19 @@ footer{
     color: var(--color-gray-900);
 }
 
+
+/* #d70954 */
 .footer__copyright{
     text-align: center;
-    border-top: 2px solid var(--color-gray-700);
-    padding: 1rem;
-    color: var(--color-white);
+    padding: 0rem;
+    color: white;
     font-weight:300 ;
+    background-color: #15b6bc;
+    margin-top: -10px;
+
+
 }
+
 
 
 
@@ -399,6 +410,7 @@ input, select, textarea{
     height: calc(100vh-12rem);  
     display: grid;
     place-items:  center;
+    margin-bottom: 100px;
 
 }
 
@@ -413,7 +425,7 @@ input, select, textarea{
 }
 
 .register small a, .login small a{
-    color: var(--color-primary);
+    color: #d70954;
 }
 
 /* custom style for react quill */
@@ -422,6 +434,8 @@ input, select, textarea{
     background: var(--color-white);
     height: 10rem !important; 
 }
+
+
 
 
 
@@ -471,13 +485,16 @@ input, select, textarea{
 
 
 /* ---------------Profile---------------- */
+
 .profile__container {
     display: grid;
     place-items: center;
     text-align: center;
+    
 }
     
 .profile__details {
+    
     width: 100%;
 }
     
@@ -525,13 +542,14 @@ input, select, textarea{
 }
 
 .profile__details h1{
-    margin-top: 1.5rem;
+    margin-top: 0rem;
 
 }
 
 .form.profile__form{
-    margin-top: 3rem;
+    margin-top: 0rem;
     margin-inline:  auto;
+    margin-bottom: 200px;
     width: var(--form-width);
 }
 
@@ -631,6 +649,9 @@ input, select, textarea{
 
     .container{
         width: var(--container-width-md);
+    }
+    .footer{
+        
     }
 
     /* Navbar */
