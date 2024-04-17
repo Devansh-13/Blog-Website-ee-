@@ -128,7 +128,7 @@ const UserProfile = () => {
           </form>
         </div>
       </div>
-      <style>{"#root{position:relative}"}</style>
+     
     </section>
   )
 }

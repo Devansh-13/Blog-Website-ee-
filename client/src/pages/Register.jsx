@@ -61,6 +61,7 @@ const navigate = useNavigate()
           <button type='submit' className='btn primary'>Register</button>
         </form>
         <small>Already have an account ? <Link to="/login">sign in</Link></small>
+        <style>{"html{position:relative; height:100vh}"}</style>
       </div>
     </section>
   )

@@ -31,6 +31,7 @@ const Posts = () => {
     }
 
   return (
+    <>
     <section className='posts'>
         { posts.length > 0 ? <div className='container posts__container'>
         {
@@ -39,7 +40,10 @@ const Posts = () => {
             title={title} description={description} authorID={creator} createdAt={createdAt} /> )
         }
         </div> : <h2 className='center'> No posts founds </h2> }
+        
     </section>
+    <style>{"html{position:relative}"}</style>
+    </>
   )
 }
 

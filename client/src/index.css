@@ -150,7 +150,7 @@ img{
 /* ===========NAVBAR =========*/
 nav{
     width: 100vw;
-    height: 5rem;
+    height: 4rem;
     display: grid;
     place-items:  center;
     background: var(255,255,255,0.5);
@@ -167,6 +167,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    
+   
 
 }
 
@@ -183,48 +185,77 @@ nav{
 
 .nav__toggle-btn{
     display: none;
+   
+   
+}
+.visible{
+    display: none;
 }
 
 
 section{
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 .container{
     width: var(--container-width-lg);
     margin-inline: auto;
+    margin-bottom: -2rem;
+    
+
 }
 
+/* Page */
 
 
-
-
-
-
-
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main{
+    flex: 1; 
+}
 
 
 
 /* ------ ----------footer-----------------*/
 footer{
-    position: absolute;
+ 
     bottom: 0;
-    height: 150px;
+    height: 50px;
     width: 100%;
     background: #15b6bc;
-    margin-top: 6rem;
+   
+    margin-top: 20px;
     padding-top: 40px;
     padding-bottom: 30px;
 
 }
 
 .footer__categories{
+    background-color: #15b6bc;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom:4rem ;
+    margin-bottom:5rem ;
+    height: 80px;
+    width: 100vw;
+    box-shadow: 0px 10px 10px -10px rgba(78, 170, 223, 0.76); /* Adjust values as needed */
+
+    /* Add the bottom border */
+    border-bottom: 1px solid #ccc; /* Adjust color and thickness as*/
+
 }
+
+#selected{
+    background-color: white;
+    color: #0c0c22;
+}
+
+
+
 
 .footer__categories a{
     background: #d70954 ;
@@ -248,7 +279,7 @@ footer{
     color: white;
     font-weight:300 ;
     background-color: #15b6bc;
-    margin-top: -10px;
+    margin-top:-10px;
 
 
 }
@@ -294,6 +325,7 @@ footer{
     border-radius: var(--radius-3);
     overflow: hidden;
     height: 10rem;
+    
 
 }
 
@@ -312,8 +344,17 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 2rem;
+    .btn ,.category{
+        color: #d70954;
+        &:hover{
+            color: white;
+        }
+    }
 }
 
+.container{
+    margin-bottom: 1px;
+}
 .post__author{
     display: flex;
     gap: 1rem;
@@ -362,7 +403,7 @@ footer{
     height: fit-content;
     max-height: 30rem;
     overflow: hidden;
-
+    
 }
 
 .post-detail p{
@@ -383,6 +424,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    margin-bottom: 26px;
 
 }
 
@@ -411,6 +453,7 @@ input, select, textarea{
     display: grid;
     place-items:  center;
     margin-bottom: 100px;
+    margin-top: 13.5rem;
 
 }
 
@@ -494,7 +537,7 @@ input, select, textarea{
 }
     
 .profile__details {
-    
+    margin-bottom:0px;
     width: 100%;
 }
     
@@ -538,11 +581,12 @@ input, select, textarea{
 .profile__avatar-btn{
     cursor: pointer;
     padding: 0;
-    background: var(--color-primary);
+    background: #d70954;
 }
 
 .profile__details h1{
-    margin-top: 0rem;
+    margin-top: 1rem;
+    /* margin-bottom: rem; */
 
 }
 
@@ -604,9 +648,11 @@ input, select, textarea{
 
 
 /* ===========Loader======== */
-/* .loader{
+.loader{
+    display: none;
     position: fixed;
     top: 0;
+    margin: 0 auto;
     left:0;
     height: 100vh;
     width: 100vh;
@@ -617,9 +663,11 @@ input, select, textarea{
 }
 
 .loader__image{
-    width: 4.5rem;
+    display: none;
+    margin: 0 auto;
+    width: 4rem;
     aspect-ratio: 1/1;
-} */
+} 
 
 
 
@@ -703,10 +751,12 @@ input, select, textarea{
     }
 
     .nav__toggle-btn{
+        
         display: inline-block;
         background: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+        
     }
 
 
@@ -754,6 +804,10 @@ input, select, textarea{
 
     .dashboard__post-thumbnail{
         width: 5rem;
+    }
+
+    .visible{
+        display: block;
     }
     
 

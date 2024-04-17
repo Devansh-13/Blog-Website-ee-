@@ -54,6 +54,7 @@ const PostDetail = () => {
         </div>
         <p dangerouslySetInnerHTML={{__html:post.description}}></p>
       </div> }
+      <style>{"#root{position:relative;}"}</style>
     </section>
   )
 }
